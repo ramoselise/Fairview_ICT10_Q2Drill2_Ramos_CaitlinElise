@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2</title>
+      <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+<style>
+        body {
+            background: #ffffff
+            min-height: 100vh;
+            font-family: Times New Roman;
+        }
+        .club-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+        .output-box {
+            background-color: rgba(255, 255, 255, 0.85);
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            white-space: pre-line;
+        }
+        .form-control {
+            background-color: #fff;
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .btn-custom {
+            background-color: #2a1147;
+            color: #fff;
+            border: 1px solid #d5cfdf;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .btn-custom:hover {
+            background-color: #ffffff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container club-container">
+
+        <h2 class="mb-4 fs-4 fw-bold">ADD NEW CLUB MEMBER:</h2>
+        
+        <div class="mb-3">
+            <input type="text" id="first-name" class="form-control mb-3" placeholder="First Name" value="Jane">
+            <input type="text" id="last-name" class="form-control mb-3" placeholder="Last Name" value="Doe">
+    
+            <button py-click="add_member" class="btn btn-custom px-4">Submit</button>
+        </div>
+
+        <div id="output-div" class="output-box">
+            ALL MEMBERS:
+            Juan dela Cruz
+            Rene Baterbonia
+            Jericho Magsalin
+            Jhoana Evangelista
+            Gab Santos
+            Beaufort Oab
+            Maverick Carlos
+            Elise Ramos
+            Cheree Mendoza
+            Therese Reyes
+            Zoey Ledres
+            Tyler Sales
+
+            TOTAL MEMBERS: 12
+       </div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
